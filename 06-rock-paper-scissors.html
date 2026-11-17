@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game</title>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <button
+      onclick="
+        const randomnumber = Math.random();
+
+        let computerchoice = '';
+
+        if (randomnumber >= 0 && randomnumber < 1 / 3) {
+          computerchoice = 'rock';
+        } else if (randomnumber >= 1 / 3 && randomnumber < 2 / 3) {
+          computerchoice = 'paper';
+        } else {
+          computerchoice = 'scissors';
+        }
+        if (computerchoice === 'rock') {
+          alert('tie');
+        } else if (computerchoice === 'paper') {
+          alert('you lose');
+        } else {
+          alert('you win');
+        }
+      "
+    >
+      Rock
+    </button>
+    <button
+      onclick="
+        const randomnumber = Math.random();
+        let computerchoice = '';
+
+        if (randomnumber >= 0 && randomnumber < 1 / 3) {
+          computerchoice = 'rock';
+        } else if (randomnumber >= 1 / 3 && randomnumber < 2 / 3) {
+          computerchoice = 'paper';
+        } else {
+          computerchoice = 'scissors';
+        }
+        if (computerchoice === 'paper') {
+          alert('tie');
+        } else if (computerchoice === 'scissors') {
+          alert('you lose');
+        } else {
+          alert('you win');
+        }
+      "
+    >
+      Paper
+    </button>
+    <button
+      onclick="
+        const randomnumber = Math.random();
+        let computerchoice = '';
+        if (randomnumber >= 0 && randomnumber < 1 / 3) {
+          computerchoice = 'rock';
+        } else if (randomnumber >= 1 / 3 && randomnumber < 2 / 3) {
+          computerchoice = 'paper';
+        } else {
+          computerchoice = 'scissors';
+        }
+        if (computerchoice === 'scissors') {
+          alert('tie');
+        } else if (computerchoice === 'rock') {
+          alert('you lose');
+        } else {
+          alert('you win');
+        }
+      "
+    >
+      Scissors
+    </button>
+    <script></script>
+  </body>
+</html>
